@@ -47,9 +47,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AtCoderTemplate\AtCoderTemplate.csproj">
+    <ProjectReference Include="..\AtCoder\AtCoder.csproj">
       <Project>{be0dc870-b1a6-4e25-84ae-6e93fc0ee945}</Project>
-      <Name>AtCoderTemplate</Name>
+      <Name>AtCoder</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
