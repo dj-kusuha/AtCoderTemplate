@@ -7,45 +7,45 @@ namespace Tests
     public class Tests
     {
         [TestCase(null, null)]
-        public void TestA(string s, string expectd)
+        public void TestA(string s, string expected)
         {
             var solve = new SolveA();
-            Assert.AreEqual(expectd, solve.GetAnswer(s));
+            Assert.AreEqual(expected, solve.GetAnswer(s));
         }
 
         [TestCase(null, null)]
-        public void TestB(string s, string expectd)
+        public void TestB(string s, string expected)
         {
             var solve = new SolveB();
-            Assert.AreEqual(expectd, solve.GetAnswer(s));
+            Assert.AreEqual(expected, solve.GetAnswer(s));
         }
 
         [TestCase(null, null)]
-        public void TestC(string s, string expectd)
+        public void TestC(string s, string expected)
         {
             var solve = new SolveC();
-            Assert.AreEqual(expectd, solve.GetAnswer(s));
+            Assert.AreEqual(expected, solve.GetAnswer(s));
         }
 
         [TestCase(null, null)]
-        public void TestD(string s, string expectd)
+        public void TestD(string s, string expected)
         {
             var solve = new SolveD();
-            Assert.AreEqual(expectd, solve.GetAnswer(s));
+            Assert.AreEqual(expected, solve.GetAnswer(s));
         }
 
         [TestCase(null, null)]
-        public void TestE(string s, string expectd)
+        public void TestE(string s, string expected)
         {
             var solve = new SolveE();
-            Assert.AreEqual(expectd, solve.GetAnswer(s));
+            Assert.AreEqual(expected, solve.GetAnswer(s));
         }
 
         [TestCase(null, null)]
-        public void TestF(string s, string expectd)
+        public void TestF(string s, string expected)
         {
             var solve = new SolveF();
-            Assert.AreEqual(expectd, solve.GetAnswer(s));
+            Assert.AreEqual(expected, solve.GetAnswer(s));
         }
     }
 }
