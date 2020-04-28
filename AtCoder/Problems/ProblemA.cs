@@ -67,6 +67,16 @@ namespace AtCoder.Problems
                 }
                 return array;
             }
+
+            public string[] GetStringArray(int n)
+            {
+                string[] array = new string[n];
+                for (int i = 0; i < n; i++)
+                {
+                    array[i] = Next();
+                }
+                return array;
+            }
         }
     }
 
@@ -75,13 +85,13 @@ namespace AtCoder.Problems
         public void Solve()
         {
             var cin = new ProblemA.Scanner();
-            var s = cin.Next();
+            var n = cin.NextLong();
 
-            var result = GetAnswer(s);
+            var result = GetAnswer(n);
             Console.WriteLine(result);
         }
 
-        public string GetAnswer(string s)
+        public string GetAnswer(long n)
         {
             return null;
         }
