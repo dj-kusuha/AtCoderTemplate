@@ -84,7 +84,7 @@ namespace AtCoder.Problems
     {
         public void Solve()
         {
-            var cin = new ProblemA.Scanner();
+            var cin = new ProblemF.Scanner();
             var n = cin.NextLong();
 
             var result = GetAnswer(n);
