@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
 namespace AtCoder.Problems
 {
@@ -14,7 +15,7 @@ namespace AtCoder.Problems
         {
             private string[] _s;
             private int _i;
-            private readonly char[] _separators = new char[] {' '};
+            private readonly char[] _separators = new char[] { ' ' };
 
             public Scanner()
             {
@@ -77,6 +78,21 @@ namespace AtCoder.Problems
                 }
                 return array;
             }
+        }
+
+        public static class MathLib
+        {
+            /// <summary>
+            /// 最大公約数
+            /// </summary>
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            public static long gcd(long a, long b) => b > 0 ? gcd(b, a % b) : a;
+
+            /// <summary>
+            /// 最小公倍数
+            /// </summary>
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            public static long lcm(long a, long b) => a / gcd(a, b) * b;
         }
     }
 
